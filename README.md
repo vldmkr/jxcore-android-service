@@ -47,14 +47,20 @@ JXCore android sample with no cordova.
 #### Test
 To test directly the projects follow the next instructions.
 
-1. Install jxcore-android in local repository.
+1.1. Install jxcore-android in local repository.
 
 ```sh
   $ cd jxcore-android
   $ gradle install
 ```
   
-2. Install android-jxcore-sample in device (check the log to see that JXCore engine starts and that the http server works)
+1.2. Install android-jxcore-sample in device (check the log to see that JXCore engine starts and that the http server works)
+
+2.1. Install jxcore-service to a local repository.
+
+```sh
+  $ (cd jxcore-service; ./gradlew install)
+```
 
 #### Installation in your own android project
 - Install jxcore-android, "gradle install"
