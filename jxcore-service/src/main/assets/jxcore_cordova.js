@@ -565,8 +565,8 @@ console.log("JXcore Cordova bridge is ready!");
 
 var jxcore_module = require("jxcore_module.js");
 
-function callJavaFunction(name) {
-  JXMobile(name).callNative();
+function callJavaFunction(name, arg) {
+  JXMobile(name).callNative(arg);
 }
 
 jxcore_module.init(callJavaFunction);
