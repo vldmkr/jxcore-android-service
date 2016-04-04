@@ -2,6 +2,13 @@
 
 package io.jxcore.node;
 
+import android.content.Context;
+import android.content.res.AssetManager;
+import android.os.Environment;
+import android.os.Handler;
+import android.os.Looper;
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.HashMap;
@@ -9,13 +16,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
-
-import android.app.Activity;
-import android.content.Context;
-import android.content.res.AssetManager;
-import android.os.Handler;
-import android.os.Looper;
-import android.util.Log;
 
 public class jxcore {
 
@@ -280,6 +280,9 @@ public class jxcore {
         + "/www/jxcore';};\n"
         + "process.userPath ='"
         + context.getFilesDir().getAbsolutePath()
+        + "';\n"
+        + "process.extPath ='"
+        + Environment.getExternalStorageDirectory().getPath()
         + "';\n"
         + "};" + mainFile;
 
