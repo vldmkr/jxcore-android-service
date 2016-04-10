@@ -63,7 +63,7 @@ public class jxcore {
 
   public jxcore(Context context){
     jxcore.context = context;
-    mainHandler = new Handler();
+    mainHandler = new Handler(context.getMainLooper());
     customJXFunctions = new ArrayList<>();
   }
 
